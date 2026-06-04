@@ -54,7 +54,7 @@ body{
     height: 400px;
     background-color: white;
     border-radius: 100px;
-    border: 2px solid brown;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 #benz p{
@@ -76,7 +76,7 @@ h1{
     background-color: rgba(255, 255, 255, 0.7);
     justify-content: center;
     align-items:center;
-    margin: 0;
+    margin: 15px;
     border: 2px solid;
     border-radius: 80px;
 }
@@ -101,6 +101,8 @@ h1{
     background-image: url(hypercar.jpg);
     background-size: contain;
     text-align:center;
+    border: 2px solid;
+    border-radius: 20px;
 }
 
 #titulo1{
@@ -109,7 +111,7 @@ h1{
     border: 2px solid;
     border-radius: 80px;
     color:black;
-    padding:5px;
+    padding:5px 10px 5px 10px;
 }
 
 #subtitulo1{
@@ -118,14 +120,69 @@ h1{
     border: 2px solid;
     border-radius: 80px;
     color:black;
-    padding:5px;
+    padding:5px 10px 5px 10px;
 }
 
 #texto1{
     display:inline-block;
+    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.7);
+    margin: 15px;
     border: 2px solid;
     border-radius: 80px;
     color:black;
     padding:5px;
+}
+
+#terms{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+#terms h1{
+    width:100%; /* ocupa toda la fila */
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.tarjeta{
+    width:300px;
+    min-height:100px;
+
+    padding:20px;
+
+    background:white;
+    border-radius:15px;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,.2);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.tarjeta h2{
+    text-align:center;
+}
+
+.tarjeta p{
+    text-align:justify;
+    font-size: 20px;
+}
+
+.tarjeta img{
+    width:100%;
+    height: 100%;
+    border-radius:10px;
+}
+
+.tarjeta figure{
+    margin-top:auto;
+    text-align:center;
+}
+
+.tarjeta ul{
+    padding-left:20px;
 }
